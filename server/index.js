@@ -21,7 +21,7 @@ app.get('/', async (req,res)=>{
 const startServer = async()=>{
     try{
     connectDB(process.env.MONGODB_URL)
-    app.listen(8080 , ()=>console.log('Server has started on port https://monkeypie.onrender.com'))
+    app.listen(10000 , ()=>console.log('Server has started on port https://monkeypie.onrender.com'))
     }catch(error){
         console.log(error);
     }
