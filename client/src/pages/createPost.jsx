@@ -26,6 +26,7 @@ const CreatePost = () => {
         const response = await fetch('https://monkeypie.onrender.com/api/v1/post',{
         method: 'POST',
         headers:{
+          'Access-Control-Allow-Origin': ' * ' ,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({...form})
